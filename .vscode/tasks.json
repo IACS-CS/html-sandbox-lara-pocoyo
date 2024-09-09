@@ -5,7 +5,11 @@
         "label": "Start Live Server",
         "type": "shell",
         "command": "npx",
-        "args": ["live-server", "--no-browser","public/"],
+        "args": [
+          "live-server",
+          "--no-browser",
+          "public/"
+        ],
         "problemMatcher": [],
         "group": {
           "kind": "build",
@@ -17,6 +21,14 @@
           "showReuseMessage": false,
           "clear": true
         }
+      },
+      {
+        "type": "npm",
+        "script": "install",
+        "group": "clean",
+        "problemMatcher": [],
+        "label": "npm: install",
+        "detail": "install dependencies from package"
       }
     ]
   }
